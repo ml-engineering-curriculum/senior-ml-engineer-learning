@@ -8,9 +8,9 @@
 > 💜 **[Sponsor this curriculum](https://github.com/sponsors/ml-engineering-curriculum)** — sponsorships keep the whole open-source AI Career Curriculum free and moving.
 <!-- /aicg:sponsor -->
 
-Lead model training at depth: advanced fine-tuning (LoRA/QLoRA/full), preference optimization (DPO/RLHF), eval-harness design, and dataset engineering at scale.
+Senior tech-lead altitude on the ML engineering ladder. Take a business problem to a defensible ML system architecture, run the evaluation program a team lives by, own the SLOs and incident response, integrate LLMs into production ML without losing the reliability contract, and mentor mid-level engineers into the same bar. Inherits — and does not re-teach — the build-altitude workflow owned by [`ml-engineer-learning`](https://github.com/ml-engineering-curriculum/ml-engineer-learning).
 
-> **Status**: scaffolded by `aicg org bootstrap-role`. The curriculum is not authored yet. Run `aicg org research` and `aicg org daily` to drive the autonomous fill-in loop.
+> **Status**: curriculum plan authored 2026-07-04. See [`CURRICULUM.md`](CURRICULUM.md) for the module and project plan, [`JOB_REQUIREMENTS.md`](JOB_REQUIREMENTS.md) for the requirements catalogue and grounding references, and [`.aicg/curriculum-plan.json`](.aicg/curriculum-plan.json) for the machine-readable plan. Lessons and projects will be drafted by subsequent autonomous content cycles. Postings evidence was deferred — web-tool permissions were not granted this session — and is owed by the next autonomous research pass; see the `Status` section of `JOB_REQUIREMENTS.md`.
 
 ## Layout
 
