@@ -1,20 +1,45 @@
 # mod-310-technical-leadership: Technical Leadership for a Senior ML Engineer
 
-> Scaffolded by `aicg org execute-plan`. Lecture chapters and exercise content are authored on subsequent autonomous cycles.
-
 **Estimated effort:** 12 hours
+
+At L20, "technical leadership" is a phrase in the promo rubric and a slot on the design-review calendar. At L30, technical leadership is the load-bearing altitude of the job — the **roadmap** leadership commits to, the **reviews** that hold the team to bar, the **mentorship and standards library** that scale the senior beyond their own throughput, and the **interview loop** that stocks the team with people who ship at bar. The senior discipline is that these four are *artefacts and mechanisms*, not personality traits: a roadmap written to be defended cold, a review that classifies its blocks predictably, a standards library other teams adopt, an interview rubric that calibrates the panel to real bar signals.
+
+This module is the *leadership-facing* sibling of [mod-301](../mod-301-senior-ml-role-scope/) (whose seniority-verb taxonomy this module turns into artefacts), [mod-302](../mod-302-ml-systems-architecture/) (whose architectural decisions this module's design-review discipline governs), [mod-305](../mod-305-advanced-evaluation/) and [mod-306](../mod-306-experimentation-at-scale/) (whose harness and rollout gates this module's reviews check against), [mod-307](../mod-307-ml-reliability-slos/) (whose SLO and runbook artefacts this module's roadmap milestones treat as first-class), [mod-308](../mod-308-platform-collaboration/) (whose paved-road inventory, RFC discipline, and hand-off contracts this module generalises to project-level RFCs, roadmap RFCs, and initiative-level hand-offs), and [mod-309](../mod-309-responsible-ai-governance/) (whose review packet is one of the artefacts this module's reviews scrutinise).
 
 ## Learning objectives
 
-- Scope and sequence a multi-quarter ML initiative and write the roadmap that leadership can commit to
-- Run code review and design review at bar — decide what blocks vs. what nudges, and mentor a mid-level to run reviews too
-- Mentor mid-level engineers and set up a paved-road standards library other teams adopt
-- Contribute to hiring loops: write and run rubric-based ML interviews, calibrate on real bar signals
+- Scope and sequence a multi-quarter ML initiative and write the roadmap that leadership can commit to.
+- Run code review and design review at bar — decide what blocks vs. what nudges, and mentor a mid-level to run reviews too.
+- Mentor mid-level engineers and set up a paved-road standards library other teams adopt.
+- Contribute to hiring loops: write and run rubric-based ML interviews, calibrate on real bar signals.
 
-## Structure
+## Chapters
 
-- `01-…md` … `0N-…md`: lecture chapters.
-- `exercises/`: per-exercise prompts.
-- `labs/`: long-form hands-on labs.
-- `quizzes/`: knowledge checks.
-- `resources.md`: external references.
+1. [`01-roadmap-and-scoping.md`](01-roadmap-and-scoping.md) — the roadmap as a decision artefact for leadership; the four questions it answers (outcome, sequence, decision points, dependencies + cost + cutlines); the ML-specific milestone kinds (baseline lock, first-pass, data/infra unblock, sophisticated model, shadow, canary, full rollout, handoff); the template; four ML-specific scoping traps (eval-later, model-vs-project uncertainty, hero project, over-committed platform dependency); the pre-commit review; keeping the roadmap alive with weekly updates, decision-point close-outs, and mid-half reviews; classifying changes honestly (adjustment vs. scope change vs. outcome change).
+2. [`02-code-review-and-design-review-at-bar.md`](02-code-review-and-design-review-at-bar.md) — what a review is *for* (correctness, bar-holding, teaching); block vs. nudge classification with the Conventional Comments discipline; the ML-specific reviewer checklist (training/serving skew, eval harness, reproducibility, cost surface, rollout gate, model card, review composition); the ML block-vs-nudge rules of thumb; design review at bar with the design-doc contents and the two facilitation failure modes; mentoring a mid-level to review too via shadow reviewing, rotating ownership, and the review retro; when to escalate; five failure modes of the senior reviewer's own practice.
+3. [`03-mentorship-and-standards-library.md`](03-mentorship-and-standards-library.md) — mentorship vs. sponsorship vs. supervision; who to mentor (and who not to); the four-phase mentorship arc (framing, skill loops, ownership transfer, wind-down); leading indicators and failure signals; the standards library as the artefact-form of senior judgement; what goes in the library (ML-PR checklist, eval-harness contract, rollout playbook, runbook template, model-card template, RFC template, design-doc template, escalation guide, naming conventions, reproducibility contract); writing standards other teams adopt; composing the library with the paved road (mod-308) and the review process (chapter 02); five failure modes.
+4. [`04-rubric-based-ml-interviews.md`](04-rubric-based-ml-interviews.md) — why rubric-based structured interviews (Schmidt & Hunter; Google re:Work; interviewing.io); the four-part ML rubric (modelling depth, systems reasoning, judgement and communication, collaboration and mentorship) with behaviourally-anchored 1–5 scales; the four-round loop shape (two technical, two behavioural); question design with multiple valid answers and multi-depth probes; the debrief with rubrics submitted in advance and a facilitator not by seniority; calibration mechanisms (shadow-and-lead rotation, score-against-outcome retros, cross-interviewer distribution audits); bias, fairness, and legal-defensibility discipline; mentoring a mid-level to interview at bar; five failure modes.
+
+## Exercises
+
+- [`exercises/exercise-01-roadmap-and-scoping.md`](exercises/exercise-01-roadmap-and-scoping.md) — author a full multi-quarter ML initiative roadmap for a chosen (or brought-in) initiative, including the outcome, non-goals, sequence, decision points, dependencies, cost/headcount, cutlines, risks, and open questions; run the pre-commit review; walk the four ML-specific traps against the draft.
+- [`exercises/exercise-02-code-review-and-design-review-at-bar.md`](exercises/exercise-02-code-review-and-design-review-at-bar.md) — perform a full ML code review against a supplied (or peer-authored) ML PR using the checklist and block-vs-nudge rules; author a design-doc peer review with facilitation notes; produce a review retro with the block-classification tallies and teaching moves for the next PR.
+- [`exercises/exercise-03-mentorship-plan-for-a-mid-level.md`](exercises/exercise-03-mentorship-plan-for-a-mid-level.md) — author a full mentorship plan for a specific mid-level engineer (real or role-played), including phase framing, skill loops, ownership-transfer plan, wind-down triggers, and calibration checkpoints; draft the shared mentorship doc; produce the first-conversation agenda.
+- [`exercises/exercise-04-rubric-based-ml-interview-loop.md`](exercises/exercise-04-rubric-based-ml-interview-loop.md) — design a full four-round Senior ML Engineer interview loop, including the rubric with behavioural anchors, four documented questions with probes and scoring anchors, the debrief structure, the calibration retro cadence, and the mentee-training plan for a mid-level to interview at bar.
+
+## Labs & quizzes
+
+- `labs/` — reserved for a longer-form end-to-end lab (a multi-week roleplay where a peer plays the mentee, the director, the platform peer, and the interview candidate; the group walks a full leadership cycle end-to-end from roadmap through hire) in a future authoring cycle.
+- `quizzes/` — reserved for a knowledge check in a future authoring cycle.
+
+## Resources
+
+External references — the roadmap and leadership canon (Larson, Fournier, StaffEng, Hogan), the review canon (Google Engineering Practices, Wiegers Peer Reviews, Fagan inspection, Conventional Comments), the standards / paved-road canon (Team Topologies, Netflix paved road, Google Style Guide), the interviewing canon (Schmidt & Hunter, Google re:Work, interviewing.io, Bock's *Work Rules!*, Kahneman's *Noise*, SIOP Principles) — are catalogued in [`resources.md`](resources.md).
+
+## How this module hands off
+
+- The **roadmap** (chapter 01) is the artefact leadership commits to and the frame every other module's technical deliverables ship inside. The chapter 01 §3 template composes with the [mod-308 chapter 03](../mod-308-platform-collaboration/03-contribute-back-rfcs.md) RFC discipline (a roadmap is not an RFC, but roadmap decisions often *spawn* RFCs at decision points) and with the [mod-309 chapter 01 §7](../mod-309-responsible-ai-governance/01-model-cards-and-data-statements.md) cadence policy (the model card's cadence is a subset of the roadmap's).
+- The **review discipline** (chapter 02) governs both the code and design reviews for every technical deliverable across the track — the [mod-305 chapter 02](../mod-305-advanced-evaluation/02-slice-and-adversarial-guardrails.md) slice-and-guardrail results, the [mod-306 chapter 01](../mod-306-experimentation-at-scale/) ramp plans, the [mod-307 chapter 01](../mod-307-ml-reliability-slos/01-sre-fundamentals-for-ml.md) SLO docs, the [mod-309](../mod-309-responsible-ai-governance/) review packets are all held to this module's bar in review.
+- The **mentorship and standards library** (chapter 03) scales the senior beyond their own throughput. The library composes with the [mod-308 chapter 01](../mod-308-platform-collaboration/01-paved-road-consumption.md) paved-road inventory (both codify shared standards, at different altitudes) and with the [mod-309](../mod-309-responsible-ai-governance/) review-packet templates (which are library entries in another domain).
+- The **interview loop** (chapter 04) stocks the team with people who ship at bar; the rubric names the specific skills every other module trains, and the loop's calibration is what keeps the team's bar aligned with the objective external landscape the [`JOB_REQUIREMENTS.md`](../../JOB_REQUIREMENTS.md) catalogue samples.
+- Chapters 02–04 all share a mentee-training arc pattern (**shadow → co-pilot → pilot → independent**) — the *reviewer training* of chapter 02 §6, the *mentorship loops* of chapter 03 §3, and the *interviewer training* of chapter 04 §8 are the same pattern applied to different practices. The pattern generalises to any senior-scaling-through-others discipline.
